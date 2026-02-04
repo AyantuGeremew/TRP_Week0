@@ -25,12 +25,17 @@ Functionality:
 - Logs all human interventions for **traceability and auditing**.  
 
 ## Database 
-NoSQL is recommended
+**NoSQL** is recommended
 
 Reason:
 - Flexible schema for rapidly evolving metadata.  
 - Supports **high ingestion rates** and **horizontal scaling**.  
 - Ideal for time-series or object-based metadata.
+
+Optional Secondary Database: **SQL**  
+
+- For **aggregated reporting**, compliance logs, or structured queries.  
+- Complements NoSQL by providing relational consistency where required. 
 
 ##  Chimera Agent Architecture Diagram(Mermaid.js)
 flowchart TD
