@@ -1,0 +1,18 @@
+# Project Chimera: AI Agent Operational Rules
+
+## 1. Context
+This is Project Chimera, an autonomous influencer system. We are building goal-directed digital entities that research, create, and manage content autonomously.
+
+## 2. THE PRIME DIRECTIVE
+- **NEVER generate code without checking `specs/` first.** 
+- The `specs/` directory is the ONLY source of truth for architecture and logic.
+
+## 3. Planning & Traceability
+- You must explain your plan in the chat before modifying any files.
+- Ensure **Tenx MCP Sense** is active to record your "Thinking Trace".
+- Distinguish between **Skills** (local functions like `download_video`) and **MCP Servers** (external bridges).
+
+## 4. Architectural Standards
+- Follow the **FastRender Swarm** pattern: Planner (Strategist), Worker (Executor), Judge (Gatekeeper).
+- All external data must be fetched via **MCP Resources**.
+- All financial actions must use **Coinbase AgentKit** and respect the $50 USDC daily budget.

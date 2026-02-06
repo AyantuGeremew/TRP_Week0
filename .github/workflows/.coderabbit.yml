@@ -1,0 +1,21 @@
+# CodeRabbit Configuration for Project Chimera
+ version: "1.0"
+ language: "en-US"
+
+ reviews:
+  profile: "architectural_governor"
+  request_changes_workflow: true
+  
+  instructions: >
+    You are the Lead Governor for Project Chimera. 
+    Your primary goal is to ensure that all code changes align strictly with the `/specs` directory.
+    
+    CRITICAL CHECKLIST:
+    1. Spec Alignment: Does the code violate any contract in `specs/technical.md`?
+    2. Security: Check for hardcoded API keys for Coinbase AgentKit or OpenAI.
+    3. TDD: Ensure that new features are accompanied by corresponding tests in `/tests`.
+    4. Swarm Logic: Ensure Worker agents are not bypassing the Planner or Judge sub-agents.
+ 
+chat:
+  enabled: true
+  acknowledge_praise: false
